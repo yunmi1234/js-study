@@ -1,14 +1,14 @@
 ;(function(win, $) {
     function renderList() {
         var dataList = [
-            {
-                name: '어쩌고 저쩌고1',
-                level: '어쩌고 저쩌고1'
-            },
-            {
-                name: '어쩌고 저쩌고2',
-                level: '어쩌고 저쩌고2'
-            }
+            // {
+            //     name: '어쩌고 저쩌고1',
+            //     level: '어쩌고 저쩌고1'
+            // },
+            // {
+            //     name: '어쩌고 저쩌고2',
+            //     level: '어쩌고 저쩌고2'
+            // }
         ];
 
         // var markup = '<div class="item">';
@@ -18,6 +18,11 @@
 
         var markup = '';
         // falsy / truthy
+
+        // https://developer.mozilla.org/ko/docs/Glossary/Truthy
+
+        // https://developer.mozilla.org/ko/docs/Glossary/Falsy
+        // falsy - null / undefined / 0 / '' / false
         if (dataList.length) {
             for (var i = 0, length = dataList.length; i < length; i++) {
                 markup += '<div class="item">';

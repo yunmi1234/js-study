@@ -7,6 +7,7 @@
         });
 
         $(document).on('click', function(e) {
+            console.log(e.currentTarget, e.target);
             var $target = $(e.target);
             // console.log($target.closest('#modal'), $target.closest('#modal').length);
             // console.log($target.attr('id') === 'modal' || !!$target.closest('#modal').length);
