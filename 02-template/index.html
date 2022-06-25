@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="item">
+            <p>이름: 어쩌고 저쩌고</p>
+            <button>등급: 어쩌고 저쩌고</button>
+        </div>
+        <div class="item">
+            <p>이름: 어쩌고 저쩌고</p>
+            <button>등급: 어쩌고 저쩌고</button>
+        </div>
+        <div class="item">
+            <p>이름: 어쩌고 저쩌고</p>
+            <button>등급: 어쩌고 저쩌고</button>
+        </div>
+        <div class="item">
+            <p>이름: 어쩌고 저쩌고</p>
+            <button>등급: 어쩌고 저쩌고</button>
+        </div>
+        <div>
+            표시할 목록이 없습니다.
+        </div> -->
+    </div>
+
+    <script id="item-template" type="text/x-handlebars-template">
+        <div class="item">
+            <p>이름: {{name}}</p>
+            <button>등급: {{level}}</button>
+        </div>
+    </script>
+
+    <script id="item-each-template" type="text/x-handlebars-template">
+        {{#each dataList}}
+        <div class="item">
+            <p>이름: {{this.name}}</p>
+            <button>등급: {{this.level}}</button>
+        </div>
+        {{/each}}
+    </script>
+
+    <script id="complete-template" type="text/x-handlebars-template">
+        {{#each dataList}}
+        <div class="item">
+            <p>이름: {{this.name}}</p>
+            <button>등급: {{this.level}}</button>
+        </div>
+        {{/each}}
+        {{#if isEmptyList}}
+        <div>
+            표시할 목록이 없습니다.
+        </div>
+        {{/if}}
+    </script>
+    
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- <script>
+    // compile the template
+    var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+    // execute the compiled template and print the output to the console
+    console.log(template({ doesWhat: "rocks!" }));
+    $('body').html(template({ doesWhat: "rocks!" }));
+    </script> -->
+    <!-- <script src="./index.js"></script> -->
+    <!-- <script src="./index-2.js"></script> -->
+    <!-- <script src="./index-3.js"></script> -->
+    <!-- <script src="./index-4.js"></script> -->
+    <script src="./index-5.js"></script>
+</body>
+</html>
