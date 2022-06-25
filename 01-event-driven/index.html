@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        #modal {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            border: 1px solid blue;
+            background: #ededed;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <script>
+        // console.log('head', document.querySelector('div'));
+        window.addEventListener('DOMContentLoaded', function() {
+            // console.log('head', document.querySelector('div'));
+        });
+        window.addEventListener('load', function() {
+            // console.log('head load', document.querySelector('div'));
+        });
+    </script>
+</head>
+<body>
+    <script>
+        // console.log('body first', document.querySelector('div'));
+        window.addEventListener('DOMContentLoaded', function() {
+            // console.log('body first', document.querySelector('div'));
+        });
+    </script>
+    <div class="div div-1">
+        one
+        <a href="#none" class="btn btn-1">button 1<span>span</span></a>
+        <div class="div div-2">
+            two
+            <a href="#none" class="btn btn-2">button 2</a>
+            <div class="div div-3">
+                three
+                <a href="#none" class="btn btn-3">button 3</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        modal
+        <button>close</button>
+    </div>
+
+    
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <!-- <script src="./index-2.js"></script> -->
+    <script src="./index-3.js"></script>
+    
+    <script>
+        // console.log('body', document.querySelector('div'));
+    </script>
+</body>
+</html>
