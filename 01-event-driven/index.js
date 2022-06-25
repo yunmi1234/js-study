@@ -70,8 +70,8 @@
     $(function() {
         // win.console.log('dom ready');
         attachBtnEvents();
-        // attachDivEvents();
-        // attachOuterEvents();
+        attachDivEvents();
+        attachOuterEvents();
 
         // dettachEvents();
     });
@@ -87,9 +87,9 @@
 // }
 
 // 함수 실행방법
-// function a() {
+// function a(win, $) {
 // }
-// a();
+// a(window, window.jQuery);
 
 // 즉시 실행 익명함수
 // (function () {
